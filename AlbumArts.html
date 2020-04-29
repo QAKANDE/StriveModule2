@@ -80,7 +80,7 @@
         <hr>
         <h3>Favorite albums</h3>
         <div id="favoriteContainer" style="background-color:ivory;">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+        <div class="row row-cols-sm-2 row-cols-lg-4">
         <div class="col mb-4">
         <div class="card my-3 mx-3" >
         <div class="card-body"style="background-color: black;">
@@ -344,6 +344,7 @@
         <p style="color: black;">Name of Developer : Quadri Omofolarin Akande </p>
         <a href="http://www.instagram.com/the_papi_q" style="color: black;"> Instagram</a>
         <a href="https://www.linkedin.com/in/quadri-akande-991b6a197"  style="color: black;">Linkedin</a>
+        <a href="mailto:quadriomofolarinakande@gmail.com" style="color: black;">Send me an email</a>
     </footer>
     </div>
     </div>
@@ -365,6 +366,11 @@
             else{
                 document.querySelector('#favoriteContainer').style.display= "block"
             }
+        }
+        function cards()
+        {
+            let card = document.querySelectorAll('.card')
+           console.log(card.length)
         }
         let hideButton = document.querySelector('#hideButton')
         hideButton.addEventListener('click' , hideFavoriteAlbum)

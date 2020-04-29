@@ -1,0 +1,22 @@
+let questions =[
+{
+    question: "what's your name?" ,
+    answer: 'Quadri',
+},
+{
+    question: "what's your age?" ,
+    answer: '99',
+}
+]
+
+for (let x=0; x<questions.length; x++)
+{
+    let question = questions[x].question
+    let title = document.createElement('h1')
+    title.innerText = question
+    let body = document.querySelector('body')
+    body.appendChild(question)
+    let answer = questions[x].answer
+}
+
+hackerrank.com
