@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Please take your quiz</h1>
+      <hr class="my-4">
+    </div>
+    <script>
+      var questions = [
+        {
+          question: "What does CPU stand for?",
+          correct_answer: "Central Processing Unit",
+          answer:["Central Process Unit","Computer Personal Unit","Central Processor Unit","Central Processing Unit"],
+          incorrect_answers: [
+            "Central Process Unit",
+            "Computer Personal Unit",
+            "Central Processor Unit",
+          ],
+        },
+        {
+          question:
+            "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?",
+          answer:["Static", "Private", "Public","Final"],
+          correct_answer: "Final",
+          incorrect_answers: ["Static", "Private", "Public"],
+        },
+        {
+          question: "The logo for Snapchat is a Bell.",
+          answer:["True" , "False"],
+          correct_answer: "False",
+          incorrect_answers: ["True"],
+        },
+        {
+          question:
+            "Pointers were not used in the original C programming language; they were added later on in C++.",
+         answer:["True" , "False"],
+          correct_answer: "False",
+          incorrect_answers: ["True"],
+        },
+        {
+          question:
+            "What is the most preferred image format used for logos in the Wikimedia database?",
+            answer:[".svg",".png", ".jpeg", ".gif"],
+          correct_answer: ".svg",
+          incorrect_answers: [".png", ".jpeg", ".gif"],
+        },
+        {
+          question: "In web design, what does CSS stand for?",
+          answer:[ "Cascading Style Sheet","Counter Strike: Source",
+            "Corrective Style Sheet",
+            "Computer Style Sheet"],
+          correct_answer: "Cascading Style Sheet",
+          incorrect_answers: [
+            "Counter Strike: Source",
+            "Corrective Style Sheet",
+            "Computer Style Sheet",
+          ],
+        },
+        {
+          question:
+            "What is the code name for the mobile operating system Android 7.0?",
+      answer:["Nougat","Ice Cream Sandwich",
+            "Jelly Bean",
+            "Marshmallow"],
+          correct_answer: "Nougat",
+          incorrect_answers: [
+            "Ice Cream Sandwich",
+            "Jelly Bean",
+            "Marshmallow",
+          ],
+        },
+        {
+          question: "On Twitter, what is the character limit for a Tweet?",
+          answer:["140","120", "160", "100"],
+          correct_answer: "140",
+          incorrect_answers: ["120", "160", "100"],
+        },
+        {
+          question: "Linux was first created as an alternative to Windows XP.",
+          answer:["True","False"],
+          correct_answer: "False",
+          incorrect_answers: ["True"],
+        },
+        {
+          question:
+            "Which programming language shares its name with an island in Indonesia?",
+            answer:["Java","Python", "C", "Jakarta"],
+          correct_answer: "Java",
+          incorrect_answers: ["Python", "C", "Jakarta"],
+        },
+      ];
+      let output=[]
+      let answer;
+      for (i=0 ; i<questions.length ; i++)
+      {
+        answer = []
+        for (letter in questions[i].answer){
+          answer.push(
+				'<label>'
+					+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
+					+ letter + ': '
+					+ questions[i].answer[letter]
+				+ '</label>'
+			);
+        }
+        output.push(
+			'<div class="question">' + questions[i].question + '</div>'
+			+ '<div class="answers">' + answer.join('') + '</div>'
+		);
+      }
+      let quizHolder = document.querySelector('.jumbotron')
+      quizHolder.innerHTML = output.join('')
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
