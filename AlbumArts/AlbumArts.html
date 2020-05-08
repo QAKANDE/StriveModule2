@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous"
+    />
+  <title>Q's Album Art</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    h5 {
+      color: white;
+    }
+
+    #favoriteContainer .col {
+      padding-left: 0px;
+      padding-right: 0px;
+      height: auto;
+    }
+
+    #favoriteContainer .card {
+      height: 100%;
+    }
+
+    .modal-dialog input[type="text"] {
+      color: white;
+      background-color: black;
+    }
+
+    .modal-dialog textarea {
+      color: white !important;
+      background-color: black !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+    <a class="navbar-brand" href="#">Quadri's album website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="background-color: black;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: blanchedalmond;">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#favoriteContainer" style="color: blanchedalmond;">Favorite albums</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#favoriteMusician" style="color: blanchedalmond;">Favorite musician</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#differentArts" style="color: blanchedalmond;">Various Album Arts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer" style="color: blanchedalmond;">Developer's contact details</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row px-4 mt-2" style="background-color: #a6300f;">
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <img class="img-fluid"
+          src="AlbumArts/Copy of Techno Triangle Album cover Template - Made with PosterMyWall.jpg">
+      </div>
+
+      <div class="col-12 col-md-8">
+        <div class="jumbotron bg-transparent">
+          <h1 class="display-4 text-white">Q AND ANTONIO ALBUM ART</h1>
+          <p class="lead text-white">Ridiculously obsessive.Dedicated to collecting and sharing meticulously
+            scanned and edited album cover art, for those of us
+            who are ridiculously obsessive about such things</p>
+          <!-- <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+          <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <hr>
+    <h3 class="my-2">Favorite albums</h3>
+    <div id="favoriteContainer">
+      <div class="row row-cols-sm-2 row-cols-lg-3">
+        <div class="col mb-4">
+          <div class="card my-3">
+            <div class="card-body d-flex flex-column justify-content-around" style="background-color: black;">
+              <img src="http://novice2star.com/wp-content/uploads/2018/02/DAVIDO.jpg" class="card-img-top">
+              <h5 class="card-title">A GOOD TIME <span class="badge badge-light mx-1 mt-1">Afrobeats</span></h5>
+              <p class="card-text" style="color: white;">
+                Artist-Davido <br>
+                Record Label-DMW/Sony
+              </p>
+              <h5 class="text-white">Track List</h5>
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Song order</th>
+                    <th scope="col">Song title</th>
+                    <th scope="col">Song length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto <i class="fas fa-trash icons"></i></td> 
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4 ">
+          <div class="card my-3">
+            <div class="card-body d-flex flex-column justify-content-around" style="background-color: black;">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.pX5B5721SQlB02cdYo_lSwHaLI&pid=Api&P=0&w=300&h=300"
+                class="card-img-top">
+              <h5 class="card-title">African Giant<span class="badge badge-light mx-1 mt-1">Afrobeats</span></h5>
+              <p class="card-text" style="color: white;">
+                Artist-Burna Boy <br>
+                Record Label- Spaceship
+              </p>
+              <h5 class="text-white">Track List</h5>
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Song order</th>
+                    <th scope="col">Song title</th>
+                    <th scope="col">Song length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3">
+            <div class="card-body d-flex flex-column justify-content-around" style="background-color: black;">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.iHKFv_YzaLAAQWjuzUwWSQHaEY&pid=Api&P=0&w=291&h=173"
+                class="card-img-top">
+              <h5 class="card-title">SOUNDS FROM THE OTHER SIDE<span
+                  class="badge badge-light mx-1 mt-1">Afrobeats</span>
+              </h5>
+              <p class="card-text">
+                Artist-Wizkid <br>
+                Record Label- StarBoy/Sony <br>
+              </p>
+              <h5 class="text-white">Track List</h5>
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Song order</th>
+                    <th scope="col">Song title</th>
+                    <th scope="col">Song length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3  ">
+            <div class="card-bodyd-flex flex-column justify-content-around" style="background-color: black;">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.KmWVcYkOkhNbrF-EIpHbZAHaFX&pid=Api&P=0&w=208&h=151"
+                class="card-img-top">
+              <h5 card-title">BLACK PRESIDENT<span class="badge badge-light mx-1 mt-1">Afrobeats</span>
+              </h5>
+              <p class="card-text">
+                Artist-Fela Kuti <br>
+                Record Label-The 70<br>
+              </p>
+              <h5 class="text-white">Track List</h5>
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Song order</th>
+                    <th scope="col">Song title</th>
+                    <th scope="col">Song length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="row  row-cols-sm-2  row-cols-md-3 row-cols-lg-4"> -->
+        <div class="col mb-4">
+          <div class="card my-3  ">
+            <div class="card-body d-flex flex-column justify-content-around" style="background-color: black;">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.amy3kFLaM4HWwqMKyQeFZgHaHa&pid=Api&P=0&w=300&h=300"
+                class="card-img-top">
+              <h5 class="card-title">MAS<span class="badge badge-light mx-1 mt-1">Flamenco</span></h5>
+              <p class="card-text">
+                Artist- Alejandro Sanz <br>
+                Record Label- Ale <br>
+              </p>
+              <h5 class="text-white">Track List</h5>
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Song order</th>
+                    <th scope="col">Song title</th>
+                    <th scope="col">Song length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3  ">
+            <div class="card-body d-flex flex-column justify-content-around" style="background-color: black;">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.zwQRsDQ0-9eCwGMtBWGiLgHaE8&pid=Api&P=0&w=256&h=171"
+                class="card-img-top">
+              <h5 class="card-title">WHILE WE WAIT<span class="badge badge-light mx-1 mt-1">R & B</span>
+              </h5>
+              <p class="card-text">
+                Artist- Kehlani <br>
+                Record Label- Sony <br>
+              </p>
+              <h5 class="text-white">Track List</h5>
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Song order</th>
+                    <th scope="col">Song title</th>
+                    <th scope="col">Song length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3  ">
+            <div id="album-1" class="card-body d-flex flex-column justify-content-around"
+              style="background-color: black;">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.A0lgLoPAG4ZmTTOoEESp6gAAAA&pid=Api&P=0&w=300&h=300"
+                class="card-img-top">
+              <h5 class="card-title">EAST ATLANTA LOVE LETTER<span class="badge badge-light mx-1 mt-1">R &
+                  B</span></h5>
+              <p class="card-text">
+                Artist- 6lack <br>
+                Record Label-Sony <br>
+              </p>
+              <h5 class="text-white">Track List</h5>
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Song order</th>
+                    <th scope="col">Song title</th>
+                    <th scope="col">Song length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3  ">
+            <div class="card-body d-flex flex-column justify-content-around" style="background-color: black;">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.Wfxs_3acTchapHn1UscrEgHaEK&pid=Api&P=0&w=316&h=178"
+                class="card-img-top">
+              <h5 class="card-title">EXODUS<span class="badge badge-light mx-1 mt-1">Raggae</span></h5>
+              <p class="card-text">
+                Artist-Bob Marley <br>
+                Record Label- The Wailers <br>
+              </p>
+              <h5 class="text-white">Track List</h5>
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">Song order</th>
+                    <th scope="col">Song title</th>
+                    <th scope="col">Song length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="hideButton" type="button" class="btn btn-outline-primary my-3"
+      style="border-color: black;  color:black;background-color: ivory">Hide/unhide section Content</button>
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+      data-whatever="album-1">Open modal for @mdo</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+      data-whatever="@fat">Open modal for @fat</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+      data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="add-track-btn" type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <hr>
+    <h3 class="mx-3">Favorite Musician of all time </h3>
+    <div id="favoriteMusician">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid mx-5 my-5"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOJc0vW6EMx5DzaZ42xRm9y9UU-8OJ4XuHTX9-XD4KY9vCdeYX&usqp=CAU"
+            alt="" />
+        </div>
+
+        <div class="col-md-8" id="project">
+          <h3 class="my-3">FELA KUTI</h3>
+          <p>
+            Date of Birth - 15 October 1938
+            Place of birth-Abeokuta, Ogun State, Nigeria <br>
+            Died - 2 August 1997 (aged 58) <br>
+            Genres- Afrobeats <br>
+            Occupation(s)- Singer/songwriter,musician,political-activist <br>
+            Instruments- Saxophone,vocals keyboards,trumpet,guitar,drums
+            Years active
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="differentArts" style="background-color: black;">
+      <h3 class="mx-2" style="color: white;">DIFFERENT ALBUM ARTS</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">IGOR</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQia6j_BqkaB5ZJ_votC45cngg31Xc9_MaNCaihkGk8pl1BPZHr&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">The weekend</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBhEoC49Yen4GDicrfy6oYOdDu6waypPxyurBPqzgq7ogQdo7d&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">Stormzy</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFq9FqEUZSk535pBTwsw20t8uUfbMFdhHfsTtK2tS_xCagYruD&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">Koffee</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1kN3oDAEC8nTNT_cTi51cSlWHeg-huwKWLIw7Lwo-bs0zn1dX&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">DA BABY</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2REOIvsuXj-FhoAY9Lu4U0s-UYWvNNsZ6qWg95d4qOb_TS7Is&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">CHANCE THE RAPPER</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">RYAN JONES</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">WONDERFUL</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row  row-cols-sm-2  row-cols-md-3 row-cols-lg-4">
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZ8-ZJ87b9XI7GzI1Ue1GiGq5uOcl85745sk-XKJdUSes4PGz1&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">CARDI B</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS796vbbdxW7Vcz8VEwSIJ4CXyg7Ulrgqc7MN_USQI-tiBcuVGz&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">KING SUNNY ADE</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRAdVPmIZshJWJ35AdH7LRvWSnFstUqiIYDgaMR0WRDwvhmHTZ_&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">ASA</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card my-3 mx-3">
+            <div class="card-body" style="background-color:ivory;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTd02rgjDhxTlU4AXVgwTZjDweCj_cRjebYXGMsmea0PoJEacY1&usqp=CAU"
+                class="card-img-top">
+              <h5 style="color:black" class="card-title">BRYMO</h5>
+              <p class="card-text">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="footer" style="background-color:ivory">
+    <footer>
+      <p style="color: black;">Name of Developer : Quadri Omofolarin Akande </p>
+      <a href="http://www.instagram.com/the_papi_q" style="color: black;"> Instagram</a>
+      <a href="https://www.linkedin.com/in/quadri-akande-991b6a197" style="color: black;">Linkedin</a>
+      <a href="mailto:quadriomofolarinakande@gmail.com" style="color: black;">Send me an email</a>
+      <hr>
+      <h4>Contact Me</h4>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Enter your text</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </footer>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+//
+
+  <script>
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var albumId = button.data('whatever') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      
+      //var modal = $(this)
+      //modal.find('.modal-title').text('New message to ' + recipient)
+      //modal.find('.modal-body input').val(recipient)
+
+      let albumElement = document.querySelector("#"+albumId)
+      //albumElement.style.background = "indigo"
+
+      let modalBtn = document.querySelector("#add-track-button")
+      modalBtn.setAttribute("onclick", "addTrackToAlbum("+albumId+")")
+
+
+    })
+
+    function hideFavoriteAlbum() {
+      let albumContainer = document.querySelector('#favoriteContainer').style.display;
+      // albumContainer.style.visibility = "hidden"
+      if (albumContainer == 'block') {
+        document.querySelector('#favoriteContainer').style.display = "none"
+      }
+      else {
+        document.querySelector('#favoriteContainer').style.display = "block"
+      }
+    }
+    function cards() {
+      let card = document.querySelectorAll('.card')
+      console.log(card.length)
+    }
+    let hideButton = document.querySelector('#hideButton')
+    hideButton.addEventListener('click', hideFavoriteAlbum)
+
+    window.onload = function () {
+      addDeleteButtons()
+      addTrack()
+    }
+
+    function addDeleteButtons() {
+      let tableRows = document.querySelectorAll("table > tbody > tr")
+
+      for (let tableRow of tableRows) {
+        let newElem = document.createElement("td")
+
+        let button = document.createElement("button")
+
+        button.setAttribute("onclick", "removeRow(event)")
+        button.innerHTML = "DELETE"
+
+        newElem.appendChild(button)
+
+        tableRow.querySelector("td:last-of-type").appendChild(newElem)
+      }
+    }
+
+    function addTrack() { //addAddTrackButtons
+        let targetTables = document.querySelectorAll("table")
+        let i = 0
+
+        for (let table of targetTables) {
+          let button = document.createElement("button")
+          button.setAttribute("onclick", "addModal()")
+          button.innerHTML = 'Add track'
+
+          table.id = "album-" + i++
+          button.setAttribute("data-whatever", table.id)
+
+          table.parentNode.appendChild(button)
+        }
+    }
+
+      function removeRow(event) {
+        event.target.parentNode.parentNode.parentNode.remove()
+      }
+            // function addModal() {
+            //    // let modalForm = dou
+            // }
+  </script>
+  
+
+</body>
+
+</html>
