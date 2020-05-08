@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="US">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width initial-resolution=1.0"/>
+<head>
+    <title>GOG REPLICA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous"
+    />
+    <style>
+        body{
+            background-color: lightgray;
+        }
+    #navbarwrapper{
+        background-color:#222833;
+    }
+a{
+  color: grey;
+}
+a:hover {
+  color:
+}
+i{
+    color: grey;
+
+}
+.card-body{
+    background-color:  #d8d8d8;
+}
+#firstHeader{
+    background-color:lightgray;
+    height: 50px;
+   
+}
+#firstHeader h4{
+   font-size:medium; 
+}
+.carouselContainer{
+    display:inline-block;
+    position:relative;
+}
+.carouselContainer .bttn{
+position: absolute;
+bottom:2em;
+right:4em;
+color:white;
+height: 60px;
+padding:1em 1.5em;
+background: linear-gradient(-180deg , #c1ec51 , #80b02a) ;
+border: solid 0px linear-gradient(-180deg , #c1ec51 , #80b02a);
+}
+.carouselContainer .carouselheader{
+position: absolute;
+bottom:2em;
+left:4em;
+padding:1em 1.5em;
+color: white;
+}
+.row .col{
+      height: auto;
+}
+.row .col .card{
+    height: 100%;
+}
+.row .col .card h5{
+    font-size: 15px;
+    font-weight:500;
+}
+
+    </style>
+</head>
+<body>
+    <div id="navbarwrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="/gog assets/logo.png" width="100"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          STORE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          ABOUT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          COMMUNITY
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SUPPORT
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: purple;">
+                      SIGN-IN
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+              </ul>
+              <div class="d-flex">
+                <i class="fa fa-shopping-cart icons mx-3"><span>0</span></i>
+                <i class="fa fa-search icons mx-3"></i>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div id ="firstHeader">
+        <h4 class="container px-4 mt-1"><i class="fa fa-highlighter"></i>>Highlights
+            <hr>
+        </h4>
+    </div>
+</div>
+<div id="carouselExampleInterval" class="carousel slide " data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+>
+       
+      </ol>
+    <div class="carousel-inner container">
+      <div class="carousel-item active" data-interval="1000">
+          <div class="carouselContainer">
+            <img src="gog assets/carousel1.jpg" class="d-block w-100" alt="...">
+            <button type="button" class="btn btn-lg btn-primary bttn">Add to cart</button>
+            <h4 class="carouselheader">Tonight we riot</h4>
+          </div>
+        </div>
+      <div class="carousel-item" data-interval="1000">
+        <div class="carouselContainer">
+            <img src="gog assets/carousel2.jpg" class="d-block w-100" alt="...">
+            <button type="button" class="btn btn-lg btn-primary bttn">Add to cart</button>
+            <h4 class="carouselheader">Celestian tales : Realms Beyond</h4>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carouselContainer">
+            <img src="gog assets/carousel3.jpg" class="d-block w-100" alt="...">
+            <button type="button" class="btn btn-lg btn-primary bttn">Add to cart</button>
+            <h4 class="carouselheader" style="color: purple;">Agent A : A puzzle in disguise</h4>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carouselContainer">
+            <img src="gog assets/carousel5.jpg" class="d-block w-100" alt="...">
+            <button type="button" class="btn btn-lg btn-primary bttn">Add to cart</button>
+            <h4 class="carouselheader">Fire watch</h4>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carouselContainer">
+            <img src="gog assets/carousel6.jpg" class="d-block w-100" alt="...">
+            <button type="button" class="btn btn-lg btn-primary bttn">Add to cart</button>
+            <h4 class="carouselheader" style="color: lime;">River punk</h4>
+          </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="container">
+  <div class="row row-cols-sm-2 row-cols-lg-4">
+    <div class="col mb-4">
+      <div class="card my-3">
+        <div class="card-body" style="background-color: #d8d8d8;">
+          <img src="gog assets/tile1.jpg" class="card-img-top">
+          <h5 class="card-title pt-1">WARTILE</h5>
+          <p class="card-text" style="color: white;">
+          </p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4 ">
+      <div class="card my-3">
+        <div class="card-body" style="background-color: #d8d8d8;">
+          <img src="gog assets/tile2.jpg"
+            class="card-img-top">
+          <h5 class="card-title pt-1">Ion Fury</h5>
+          <p class="card-text" style="color: white;">
+          </p>
+         
+
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card my-3">
+        <div class="card-body" style="background-color: #d8d8d8;">
+          <img src="gog assets/tile (3).jpg"
+            class="card-img-top">
+          <h5 class="card-title pt-1"> GRISs
+          </h5>
+          <p class="card-text">
+          </p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card my-3 ">
+        <div class="card-body" style="background-color: #d8d8d8;">
+          <img src="gog assets/tile (4).jpg"
+            class="card-img-top">
+          <h5  class="card-title pt-1">Close Combat : Wacht Am Rhein</h5>
+          <p class="card-text">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <hr>
+  <div class="container">
+   <div class="row">
+       <div class="col-12 col-lg-10">
+        We are GOG.COM,the <a href="#" style="color: #86328a;font-weight: bold;">DRM-FREE</a> home for a <a href="#" style="color: #86328a;font-weight: bold;">curated selection</a> of games.This place was 
+        <a href="#" style="color: #86328a; font-weight: bold;">made for gamers</a> so make yourself at <br>
+        home.
+       </div>
+       <div class="col-12 col-lg-2">
+           <a href="#" style="color: #86328a;font-weight: bold;">The New GOG Galaxy 2.0</a>
+       </div>
+   </div>
+  </div>
+  <hr>
+  <div id ="firstHeader">
+    <h4 class="container px-4 mt-1"><i class="fa fa-star"></i>What's good?
+        <hr>
+    </h4>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner container">
+      <div class="carousel-item active">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                 <div class="card my-3">
+                     <div class="card-body" style="background-color: #d8d8d8;">
+                       <img src="gog assets/tile (5).jpg" class="card-img-top">
+                       <h5 class="card-title pt-1">The flower collectors</h5>
+                       <p class="card-text" style="color: white;">
+                       </p>
+                      
+                     </div>
+                   </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col">
+                         <div class="card my-3">
+                             <div class="card-body" style="background-color: #d8d8d8;">
+                                 <img src="gog assets/tile (6).jpg" class="card-img-top">
+                               <h5 class="card-title pt-1">Children of Morta</h5>
+                               <p class="card-text" style="color: white;">
+                               </p>
+                              
+                             </div>
+                           </div>
+                        </div>
+                        <div class="col"> <div class="card my-3">
+                         <div class="card-body" style="background-color: #d8d8d8;">
+                             <img src="gog assets/tile (7).jpg" class="card-img-top">
+                           <h5 class="card-title pt-1">Indivisible</h5>
+                           <p class="card-text" style="color: white;">
+                           </p>
+                          
+                         </div>
+                       </div></div>
+                    </div>
+                    <div class="row">
+                     <div class="col">
+                      <div class="card my-3">
+                          <div class="card-body" style="background-color: #d8d8d8;">
+                             <img src="gog assets/tile (8).jpg" class="card-img-top">
+                            <h5 class="card-title pt-1">Virginia</h5>
+                            <p class="card-text" style="color: white;">
+                            </p>
+                           
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col"> <div class="card my-3">
+                      <div class="card-body" style="background-color: #d8d8d8;">
+                         <img src="gog assets/tile (9).jpg" class="card-img-top">
+                        <h5 class="card-title pt-1">Railway Empire</h5>
+                        <p class="card-text" style="color: white;">
+                        </p>
+                       
+                      </div>
+                    </div>
+                 </div>
+                 </div>
+                </div>
+            </div>
+           </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                 <div class="card my-3">
+                     <div class="card-body" style="background-color: #d8d8d8;">
+                       <img src="gog assets/tile (10).jpg" class="card-img-top">
+                       <h5 class="card-title pt-1">Lovecraft's untold series</h5>
+                       <p class="card-text" style="color: white;">
+                       </p>
+                      
+                     </div>
+                   </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col">
+                         <div class="card my-3">
+                             <div class="card-body" style="background-color: #d8d8d8;">
+                                 <img src="gog assets/tile (11).jpg" class="card-img-top">
+                               <h5 class="card-title pt-1">Blood stained</h5>
+                               <p class="card-text" style="color: white;">
+                               </p>
+                              
+                             </div>
+                           </div>
+                        </div>
+                        <div class="col"> <div class="card my-3">
+                         <div class="card-body" style="background-color: #d8d8d8;">
+                             <img src="gog assets/tile (12).jpg" class="card-img-top">
+                           <h5 class="card-title pt-1">Soul saga</h5>
+                           <p class="card-text" style="color: white;">
+                           </p>
+                          
+                         </div>
+                       </div></div>
+                    </div>
+                    <div class="row">
+                     <div class="col">
+                      <div class="card my-3">
+                          <div class="card-body" style="background-color: #d8d8d8;">
+                             <img src="gog assets/tile (13).jpg" class="card-img-top">
+                            <h5 class="card-title pt-1">Through dark times</h5>
+                            <p class="card-text" style="color: white;">
+                            </p>
+                           
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col"> <div class="card my-3">
+                      <div class="card-body" style="background-color: #d8d8d8;">
+                         <img src="gog assets/tile (14).jpg" class="card-img-top">
+                        <h5 class="card-title pt-1">Storms</h5>
+                        <p class="card-text" style="color: white;">
+                        </p>
+                       
+                      </div>
+                    </div>
+                 </div>
+                 </div>
+                </div>
+            </div>
+           </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                 <div class="card my-3">
+                     <div class="card-body" style="background-color: #d8d8d8;">
+                       <img src="gog assets/tile (15).jpg" class="card-img-top">
+                       <h5 class="card-title pt-1">God of Thunder</h5>
+                       <p class="card-text" style="color: white;">
+                       </p>
+                      
+                     </div>
+                   </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col">
+                         <div class="card my-3">
+                             <div class="card-body" style="background-color: #d8d8d8;">
+                                 <img src="gog assets/tile (16).jpg" class="card-img-top">
+                               <h5 class="card-title pt-1">Iron King</h5>
+                               <p class="card-text" style="color: white;">
+                               </p>
+                              
+                             </div>
+                           </div>
+                        </div>
+                        <div class="col"> <div class="card my-3">
+                         <div class="card-body" style="background-color: #d8d8d8;">
+                             <img src="gog assets/tile (17).jpg" class="card-img-top">
+                           <h5 class="card-title pt-1">King of Salma</h5>
+                           <p class="card-text" style="color: white;">
+                           </p>
+                          
+                         </div>
+                       </div></div>
+                    </div>
+                    <div class="row">
+                     <div class="col">
+                      <div class="card my-3">
+                          <div class="card-body" style="background-color: #d8d8d8;">
+                             <img src="gog assets/tile (18).jpg" class="card-img-top">
+                            <h5 class="card-title pt-1">WAR FOOT</h5>
+                            <p class="card-text" style="color: white;">
+                            </p>
+                           
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col"> <div class="card my-3">
+                      <div class="card-body" style="background-color: #d8d8d8;">
+                         <img src="gog assets/tile (19).jpg" class="card-img-top">
+                        <h5 class="card-title pt-1">TILER</h5>
+                        <p class="card-text" style="color: white;">
+                        </p>
+                      </div>
+                    </div>
+                 </div>
+                 </div>
+                </div>
+            </div>
+           </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div id ="firstHeader">
+    <h4 class="container px-4 mt-1"><i class="fa fa-bullhorn mx-2"></i>Releases you might like
+        <hr>
+    </h4>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner container">
+      <div class="carousel-item active" data-interval="1000">
+      <div class="row">
+          <div class="col">
+            <div class="card my-3">
+                <div class="card-body" style="background-color: #d8d8d8;">
+                  <img src="gog assets/tile (20).jpg" class="card-img-top">
+                  <h5 class="card-title pt-1">WARTILE</h5>
+                  <p class="card-text" style="color: white;">
+                  </p>
+                 
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card my-3">
+                <div class="card-body" style="background-color: #d8d8d8;">
+                  <img src="gog assets/tile (21).jpg" class="card-img-top">
+                  <h5 class="card-title pt-1">WARTILE</h5>
+                  <p class="card-text" style="color: white;">
+                  </p>
+                 
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card my-3">
+                <div class="card-body" style="background-color: #d8d8d8;">
+                  <img src="gog assets/tile (22).jpg" class="card-img-top">
+                  <h5 class="card-title pt-1">WARTILE</h5>
+                  <p class="card-text" style="color: white;">
+                  </p>
+                 
+                </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="carousel-item" data-interval="1000">
+        <div class="row">
+            <div class="col">
+              <div class="card my-3">
+                  <div class="card-body" style="background-color: #d8d8d8;">
+                    <img src="gog assets/tile (23).jpg" class="card-img-top">
+                    <h5 class="card-title pt-1">WARTILE</h5>
+                    <p class="card-text" style="color: white;">
+                    </p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card my-3">
+                  <div class="card-body" style="background-color: #d8d8d8;">
+                    <img src="gog assets/tile (24).jpg" class="card-img-top">
+                    <h5 class="card-title pt-1">WARTILE</h5>
+                    <p class="card-text" style="color: white;">
+                    </p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card my-3">
+                  <div class="card-body" style="background-color: #d8d8d8;">
+                    <img src="gog assets/tile (25).jpg" class="card-img-top">
+                    <h5 class="card-title pt-1">WARTILE</h5>
+                    <p class="card-text" style="color: white;">
+                    </p>
+                   
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+            <div class="col">
+              <div class="card my-3">
+                  <div class="card-body" style="background-color: #d8d8d8;">
+                    <img src="gog assets/tile (26).jpg" class="card-img-top">
+                    <h5 class="card-title pt-1">WARTILE</h5>
+                    <p class="card-text" style="color: white;">
+                    </p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card my-3">
+                  <div class="card-body" style="background-color: #d8d8d8;">
+                    <img src="gog assets/tile (27).jpg" class="card-img-top">
+                    <h5 class="card-title pt-1">WARTILE</h5>
+                    <p class="card-text" style="color: white;">
+                    </p>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card my-3">
+                  <div class="card-body" style="background-color: #d8d8d8;">
+                    <img src="gog assets/tile (28).jpg" class="card-img-top">
+                    <h5 class="card-title pt-1">WARTILE</h5>
+                    <p class="card-text" style="color: white;">
+                    </p>
+                   
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <footer>
+    <div id="navbarwrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+    </div>
+  </footer>
+  <!-- <div class="container">
+  <div class=" row">
+<div class="col col-lg-6">
+  <div id ="firstHeader">
+    <h4 class="px-4 mt-1"><i class="fa fa-percent mx-2"></i>Now on sale
+        <u><a href="#">Featured deals</a></u>
+        <u><a href="#">Weekly Sales</a></u>
+        <u><a href="#">Midweek Sales</a></u>
+        <hr>
+    </h4>
+    <table class="table table-borderless">
+        <tbody>
+          <tr>
+            <th scope="row">
+                <img src="gog assets/tile (5).jpg" width="150px"/>
+            </th>
+            <td>CyberPunk 2077</td>
+            <td>£30</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <img src="gog assets/tile (6).jpg" width="150px"/>
+            </th>
+            <td>Fire watch</td>
+            <td>£55</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <img src="gog assets/tile (7).jpg" width="150px"/>
+            </th>
+            <td>The witcher 3</td>
+            <td>£45</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <img src="gog assets/tile (8).jpg" width="150px"/>
+            </th>
+            <td>The witcher 4</td>
+            <td>£35</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+
+<div class="col col-lg-6">
+    <div class="row">
+        <div class="col">
+            <div><img src="gog assets/tile (35).jpg" >
+        </div>
+    </div>
+</div>
+            <div class="row">
+                <div class="col"> <img src="gog assets/tile (35).jpg" ></div>
+                <div class="col"> <img src="gog assets/tile (35).jpg" ></div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col"> <img src="gog assets/tile (35).jpg" ></div>
+        <div class="col"> <img src="gog assets/tile (35).jpg" ></div>
+    </div>
+    <div class="row">
+        <div class="col"> <img src="gog assets/tile (35).jpg" ></div>
+        <div class="col"> <img src="gog assets/tile (35).jpg" ></div>
+    </div>
+    <div class="row">
+        <div class="col"> <img src="gog assets/tile (35).jpg" ></div>
+    </div>
+    <div class="row">
+        <div class="col"> <img src="gog assets/tile (35).jpg" ></div>
+    </div>
+</div>
+</div> -->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
