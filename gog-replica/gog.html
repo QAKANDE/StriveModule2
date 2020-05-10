@@ -18,6 +18,7 @@
     #navbarwrapper{
         background-color:#222833;
     }
+  
 a{
   color: grey;
 }
@@ -30,6 +31,9 @@ i{
 }
 .card-body{
     background-color:  #d8d8d8;
+    padding: 0.75rem;
+    overflow: hidden;
+    transform: translateX(0);
 }
 #firstHeader{
     background-color:lightgray;
@@ -51,7 +55,7 @@ color:white;
 height: 60px;
 padding:1em 1.5em;
 background: linear-gradient(-180deg , #c1ec51 , #80b02a) ;
-border: solid 0px linear-gradient(-180deg , #c1ec51 , #80b02a);
+border: 0;
 }
 .carouselContainer .carouselheader{
 position: absolute;
@@ -60,6 +64,50 @@ left:4em;
 padding:1em 1.5em;
 color: white;
 }
+.my-badge{
+    background-color: transparent;
+    color: #404040;
+    font-weight: 700;
+    line-height: 12px;}
+.button-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-badge-wrapper{
+display: flex;
+}
+.badge-wrapper{
+    padding-top:8px;
+}
+.purple-btn{
+    background-color: #78387B;
+    color: white;
+    font-weight: bolder;
+    padding: 0.25rem;
+}
+.card-body{
+    padding: 0.75rem;
+    overflow: hidden;
+    transform: translateX(0);
+}
+.card{
+    box-shadow: 0 6px 40px rgba(0,0,0,0.3);
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+.card:hover .image-badge-wrapper #shopbtn{
+  display: block !important; 
+}
+.card:hover .icons-wrapper{
+  transform: translateX(-50px);
+  display: flex;
+}
+
 .row .col{
       height: auto;
 }
@@ -173,6 +221,7 @@ color: white;
             <img src="gog assets/carousel1.jpg" class="d-block w-100" alt="...">
             <button type="button" class="btn btn-lg btn-primary bttn">Add to cart</button>
             <h4 class="carouselheader">Tonight we riot</h4>
+            <h4 class="carouselheader">Tonight we riot</h4>
           </div>
         </div>
       <div class="carousel-item" data-interval="1000">
@@ -221,8 +270,23 @@ color: white;
           <img src="gog assets/tile1.jpg" class="card-img-top">
           <h5 class="card-title pt-1">WARTILE</h5>
           <p class="card-text" style="color: white;">
+            <div class="button-wrapper">
+              <div class="icons-wrapper">
+                <i class="fa fa-windows icons"></i>
+              </div>
+              <div class="image-badge-wrapper">
+                <button type="button" class="btn purple-btn"><b>-60%</b></button>
+              <div class="badge-wrapper d-flex flex-column">
+              
+                 <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                 <span class="badge">€7.79</span>
+              </div>
+                  <div id="shopbtn" style="display: none;">
+                    <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                  </div>
+              </div>
+          </div>
           </p>
-         
         </div>
       </div>
     </div>
@@ -233,9 +297,23 @@ color: white;
             class="card-img-top">
           <h5 class="card-title pt-1">Ion Fury</h5>
           <p class="card-text" style="color: white;">
+            <div class="button-wrapper">
+              <div class="icons-wrapper">
+                <i class="fa fa-windows icons"></i>
+              </div>
+              <div class="image-badge-wrapper">
+                <button type="button" class="btn purple-btn"><b>-25%</b></button>
+              <div class="badge-wrapper d-flex flex-column">
+              
+                 <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                 <span class="badge">€7.79</span>
+              </div>
+                  <div id="shopbtn" style="display: none;">
+                    <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                  </div>
+              </div>
+          </div>
           </p>
-         
-
         </div>
       </div>
     </div>
@@ -247,6 +325,22 @@ color: white;
           <h5 class="card-title pt-1"> GRISs
           </h5>
           <p class="card-text">
+            <div class="button-wrapper">
+              <div class="icons-wrapper">
+                <i class="fa fa-windows icons"></i>
+              </div>
+              <div class="image-badge-wrapper">
+                <button type="button" class="btn purple-btn"><b>-50%</b></button>
+              <div class="badge-wrapper d-flex flex-column">
+              
+                 <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                 <span class="badge">€7.79</span>
+              </div>
+                  <div id="shopbtn" style="display: none;">
+                    <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                  </div>
+              </div>
+          </div>
           </p>
          
         </div>
@@ -259,6 +353,22 @@ color: white;
             class="card-img-top">
           <h5  class="card-title pt-1">Close Combat : Wacht Am Rhein</h5>
           <p class="card-text">
+            <div class="button-wrapper">
+              <div class="icons-wrapper">
+                <i class="fa fa-windows icons"></i>
+              </div>
+              <div class="image-badge-wrapper">
+                <!-- <button type="button" class="btn purple-btn"><b>-60%</b></button> -->
+              <div class="badge-wrapper d-flex flex-column">
+              
+                 <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                 <span class="badge">€7.79</span>
+              </div>
+                  <div id="shopbtn" style="display: none;">
+                    <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                  </div>
+              </div>
+          </div>
           </p>
         </div>
       </div>
@@ -300,6 +410,22 @@ color: white;
                        <img src="gog assets/tile (5).jpg" class="card-img-top">
                        <h5 class="card-title pt-1">The flower collectors</h5>
                        <p class="card-text" style="color: white;">
+                        <div class="button-wrapper">
+                          <div class="icons-wrapper">
+                            <i class="fa fa-windows icons"></i>
+                          </div>
+                          <div class="image-badge-wrapper">
+                            <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                          <div class="badge-wrapper d-flex flex-column">
+                          
+                             <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                             <span class="badge">€7.79</span>
+                          </div>
+                              <div id="shopbtn" style="display: none;">
+                                <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                              </div>
+                          </div>
+                      </div>
                        </p>
                       
                      </div>
@@ -313,6 +439,22 @@ color: white;
                                  <img src="gog assets/tile (6).jpg" class="card-img-top">
                                <h5 class="card-title pt-1">Children of Morta</h5>
                                <p class="card-text" style="color: white;">
+                                <div class="button-wrapper">
+                                  <div class="icons-wrapper">
+                                    <i class="fa fa-windows icons"></i>
+                                  </div>
+                                  <div class="image-badge-wrapper">
+                                    <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                                  <div class="badge-wrapper d-flex flex-column">
+                                  
+                                     <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                     <span class="badge">€7.79</span>
+                                  </div>
+                                      <div id="shopbtn" style="display: none;">
+                                        <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                      </div>
+                                  </div>
+                              </div>
                                </p>
                               
                              </div>
@@ -323,6 +465,22 @@ color: white;
                              <img src="gog assets/tile (7).jpg" class="card-img-top">
                            <h5 class="card-title pt-1">Indivisible</h5>
                            <p class="card-text" style="color: white;">
+                            <div class="button-wrapper">
+                              <div class="icons-wrapper">
+                                <i class="fa fa-windows icons"></i>
+                              </div>
+                              <div class="image-badge-wrapper">
+                                <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                              <div class="badge-wrapper d-flex flex-column">
+                              
+                                 <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                 <span class="badge">€7.79</span>
+                              </div>
+                                  <div id="shopbtn" style="display: none;">
+                                    <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                  </div>
+                              </div>
+                          </div>
                            </p>
                           
                          </div>
@@ -335,6 +493,22 @@ color: white;
                              <img src="gog assets/tile (8).jpg" class="card-img-top">
                             <h5 class="card-title pt-1">Virginia</h5>
                             <p class="card-text" style="color: white;">
+                              <div class="button-wrapper">
+                                <div class="icons-wrapper">
+                                  <i class="fa fa-windows icons"></i>
+                                </div>
+                                <div class="image-badge-wrapper">
+                                  <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                                <div class="badge-wrapper d-flex flex-column">
+                                
+                                   <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                   <span class="badge">€7.79</span>
+                                </div>
+                                    <div id="shopbtn" style="display: none;">
+                                      <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
                             </p>
                            
                           </div>
@@ -345,6 +519,22 @@ color: white;
                          <img src="gog assets/tile (9).jpg" class="card-img-top">
                         <h5 class="card-title pt-1">Railway Empire</h5>
                         <p class="card-text" style="color: white;">
+                          <div class="button-wrapper">
+                            <div class="icons-wrapper">
+                              <i class="fa fa-windows icons"></i>
+                            </div>
+                            <div class="image-badge-wrapper">
+                              <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                            <div class="badge-wrapper d-flex flex-column">
+                            
+                               <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                               <span class="badge">€7.79</span>
+                            </div>
+                                <div id="shopbtn" style="display: none;">
+                                  <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
                         </p>
                        
                       </div>
@@ -364,6 +554,22 @@ color: white;
                        <img src="gog assets/tile (10).jpg" class="card-img-top">
                        <h5 class="card-title pt-1">Lovecraft's untold series</h5>
                        <p class="card-text" style="color: white;">
+                        <div class="button-wrapper">
+                          <div class="icons-wrapper">
+                            <i class="fa fa-windows icons"></i>
+                          </div>
+                          <div class="image-badge-wrapper">
+                            <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                          <div class="badge-wrapper d-flex flex-column">
+                          
+                             <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                             <span class="badge">€7.79</span>
+                          </div>
+                              <div id="shopbtn" style="display: none;">
+                                <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                              </div>
+                          </div>
+                      </div>
                        </p>
                       
                      </div>
@@ -377,6 +583,22 @@ color: white;
                                  <img src="gog assets/tile (11).jpg" class="card-img-top">
                                <h5 class="card-title pt-1">Blood stained</h5>
                                <p class="card-text" style="color: white;">
+                                <div class="button-wrapper">
+                                  <div class="icons-wrapper">
+                                    <i class="fa fa-windows icons"></i>
+                                  </div>
+                                  <div class="image-badge-wrapper">
+                                    <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                                  <div class="badge-wrapper d-flex flex-column">
+                                  
+                                     <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                     <span class="badge">€7.79</span>
+                                  </div>
+                                      <div id="shopbtn" style="display: none;">
+                                        <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                      </div>
+                                  </div>
+                              </div>
                                </p>
                               
                              </div>
@@ -387,6 +609,22 @@ color: white;
                              <img src="gog assets/tile (12).jpg" class="card-img-top">
                            <h5 class="card-title pt-1">Soul saga</h5>
                            <p class="card-text" style="color: white;">
+                            <div class="button-wrapper">
+                              <div class="icons-wrapper">
+                                <i class="fa fa-windows icons"></i>
+                              </div>
+                              <div class="image-badge-wrapper">
+                                <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                              <div class="badge-wrapper d-flex flex-column">
+                              
+                                 <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                 <span class="badge">€7.79</span>
+                              </div>
+                                  <div id="shopbtn" style="display: none;">
+                                    <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                  </div>
+                              </div>
+                          </div>
                            </p>
                           
                          </div>
@@ -399,6 +637,22 @@ color: white;
                              <img src="gog assets/tile (13).jpg" class="card-img-top">
                             <h5 class="card-title pt-1">Through dark times</h5>
                             <p class="card-text" style="color: white;">
+                              <div class="button-wrapper">
+                                <div class="icons-wrapper">
+                                  <i class="fa fa-windows icons"></i>
+                                </div>
+                                <div class="image-badge-wrapper">
+                                  <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                                <div class="badge-wrapper d-flex flex-column">
+                                
+                                   <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                   <span class="badge">€7.79</span>
+                                </div>
+                                    <div id="shopbtn" style="display: none;">
+                                      <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
                             </p>
                            
                           </div>
@@ -409,6 +663,22 @@ color: white;
                          <img src="gog assets/tile (14).jpg" class="card-img-top">
                         <h5 class="card-title pt-1">Storms</h5>
                         <p class="card-text" style="color: white;">
+                          <div class="button-wrapper">
+                            <div class="icons-wrapper">
+                              <i class="fa fa-windows icons"></i>
+                            </div>
+                            <div class="image-badge-wrapper">
+                              <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                            <div class="badge-wrapper d-flex flex-column">
+                            
+                               <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                               <span class="badge">€7.79</span>
+                            </div>
+                                <div id="shopbtn" style="display: none;">
+                                  <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
                         </p>
                        
                       </div>
@@ -428,6 +698,22 @@ color: white;
                        <img src="gog assets/tile (15).jpg" class="card-img-top">
                        <h5 class="card-title pt-1">God of Thunder</h5>
                        <p class="card-text" style="color: white;">
+                        <div class="button-wrapper">
+                          <div class="icons-wrapper">
+                            <i class="fa fa-windows icons"></i>
+                          </div>
+                          <div class="image-badge-wrapper">
+                            <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                          <div class="badge-wrapper d-flex flex-column">
+                          
+                             <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                             <span class="badge">€7.79</span>
+                          </div>
+                              <div id="shopbtn" style="display: none;">
+                                <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                              </div>
+                          </div>
+                      </div>
                        </p>
                       
                      </div>
@@ -441,6 +727,22 @@ color: white;
                                  <img src="gog assets/tile (16).jpg" class="card-img-top">
                                <h5 class="card-title pt-1">Iron King</h5>
                                <p class="card-text" style="color: white;">
+                                <div class="button-wrapper">
+                                  <div class="icons-wrapper">
+                                    <i class="fa fa-windows icons"></i>
+                                  </div>
+                                  <div class="image-badge-wrapper">
+                                    <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                                  <div class="badge-wrapper d-flex flex-column">
+                                  
+                                     <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                     <span class="badge">€7.79</span>
+                                  </div>
+                                      <div id="shopbtn" style="display: none;">
+                                        <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                      </div>
+                                  </div>
+                              </div>
                                </p>
                               
                              </div>
@@ -451,6 +753,22 @@ color: white;
                              <img src="gog assets/tile (17).jpg" class="card-img-top">
                            <h5 class="card-title pt-1">King of Salma</h5>
                            <p class="card-text" style="color: white;">
+                            <div class="button-wrapper">
+                              <div class="icons-wrapper">
+                                <i class="fa fa-windows icons"></i>
+                              </div>
+                              <div class="image-badge-wrapper">
+                                <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                              <div class="badge-wrapper d-flex flex-column">
+                              
+                                 <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                 <span class="badge">€7.79</span>
+                              </div>
+                                  <div id="shopbtn" style="display: none;">
+                                    <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                  </div>
+                              </div>
+                          </div>
                            </p>
                           
                          </div>
@@ -463,6 +781,22 @@ color: white;
                              <img src="gog assets/tile (18).jpg" class="card-img-top">
                             <h5 class="card-title pt-1">WAR FOOT</h5>
                             <p class="card-text" style="color: white;">
+                              <div class="button-wrapper">
+                                <div class="icons-wrapper">
+                                  <i class="fa fa-windows icons"></i>
+                                </div>
+                                <div class="image-badge-wrapper">
+                                  <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                                <div class="badge-wrapper d-flex flex-column">
+                                
+                                   <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                                   <span class="badge">€7.79</span>
+                                </div>
+                                    <div id="shopbtn" style="display: none;">
+                                      <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
                             </p>
                            
                           </div>
@@ -473,6 +807,22 @@ color: white;
                          <img src="gog assets/tile (19).jpg" class="card-img-top">
                         <h5 class="card-title pt-1">TILER</h5>
                         <p class="card-text" style="color: white;">
+                          <div class="button-wrapper">
+                            <div class="icons-wrapper">
+                              <i class="fa fa-windows icons"></i>
+                            </div>
+                            <div class="image-badge-wrapper">
+                              <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                            <div class="badge-wrapper d-flex flex-column">
+                            
+                               <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                               <span class="badge">€7.79</span>
+                            </div>
+                                <div id="shopbtn" style="display: none;">
+                                  <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
                         </p>
                       </div>
                     </div>
@@ -512,6 +862,22 @@ color: white;
                   <img src="gog assets/tile (20).jpg" class="card-img-top">
                   <h5 class="card-title pt-1">WARTILE</h5>
                   <p class="card-text" style="color: white;">
+                    <div class="button-wrapper">
+                      <div class="icons-wrapper">
+                        <i class="fa fa-windows icons"></i>
+                      </div>
+                      <div class="image-badge-wrapper">
+                        <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                      <div class="badge-wrapper d-flex flex-column">
+                      
+                         <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                         <span class="badge">€7.79</span>
+                      </div>
+                          <div id="shopbtn" style="display: none;">
+                            <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                          </div>
+                      </div>
+                  </div>
                   </p>
                  
                 </div>
@@ -523,6 +889,22 @@ color: white;
                   <img src="gog assets/tile (21).jpg" class="card-img-top">
                   <h5 class="card-title pt-1">WARTILE</h5>
                   <p class="card-text" style="color: white;">
+                    <div class="button-wrapper">
+                      <div class="icons-wrapper">
+                        <i class="fa fa-windows icons"></i>
+                      </div>
+                      <div class="image-badge-wrapper">
+                        <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                      <div class="badge-wrapper d-flex flex-column">
+                      
+                         <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                         <span class="badge">€7.79</span>
+                      </div>
+                          <div id="shopbtn" style="display: none;">
+                            <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                          </div>
+                      </div>
+                  </div>
                   </p>
                  
                 </div>
@@ -534,6 +916,22 @@ color: white;
                   <img src="gog assets/tile (22).jpg" class="card-img-top">
                   <h5 class="card-title pt-1">WARTILE</h5>
                   <p class="card-text" style="color: white;">
+                    <div class="button-wrapper">
+                      <div class="icons-wrapper">
+                        <i class="fa fa-windows icons"></i>
+                      </div>
+                      <div class="image-badge-wrapper">
+                        <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                      <div class="badge-wrapper d-flex flex-column">
+                      
+                         <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                         <span class="badge">€7.79</span>
+                      </div>
+                          <div id="shopbtn" style="display: none;">
+                            <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                          </div>
+                      </div>
+                  </div>
                   </p>
                  
                 </div>
@@ -549,6 +947,22 @@ color: white;
                     <img src="gog assets/tile (23).jpg" class="card-img-top">
                     <h5 class="card-title pt-1">WARTILE</h5>
                     <p class="card-text" style="color: white;">
+                      <div class="button-wrapper">
+                        <div class="icons-wrapper">
+                          <i class="fa fa-windows icons"></i>
+                        </div>
+                        <div class="image-badge-wrapper">
+                          <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                        <div class="badge-wrapper d-flex flex-column">
+                        
+                           <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                           <span class="badge">€7.79</span>
+                        </div>
+                            <div id="shopbtn" style="display: none;">
+                              <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
                     </p>
                    
                   </div>
@@ -560,6 +974,22 @@ color: white;
                     <img src="gog assets/tile (24).jpg" class="card-img-top">
                     <h5 class="card-title pt-1">WARTILE</h5>
                     <p class="card-text" style="color: white;">
+                      <div class="button-wrapper">
+                        <div class="icons-wrapper">
+                          <i class="fa fa-windows icons"></i>
+                        </div>
+                        <div class="image-badge-wrapper">
+                          <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                        <div class="badge-wrapper d-flex flex-column">
+                        
+                           <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                           <span class="badge">€7.79</span>
+                        </div>
+                            <div id="shopbtn" style="display: none;">
+                              <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
                     </p>
                    
                   </div>
@@ -571,6 +1001,22 @@ color: white;
                     <img src="gog assets/tile (25).jpg" class="card-img-top">
                     <h5 class="card-title pt-1">WARTILE</h5>
                     <p class="card-text" style="color: white;">
+                      <div class="button-wrapper">
+                        <div class="icons-wrapper">
+                          <i class="fa fa-windows icons"></i>
+                        </div>
+                        <div class="image-badge-wrapper">
+                          <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                        <div class="badge-wrapper d-flex flex-column">
+                        
+                           <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                           <span class="badge">€7.79</span>
+                        </div>
+                            <div id="shopbtn" style="display: none;">
+                              <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
                     </p>
                    
                   </div>
@@ -586,6 +1032,22 @@ color: white;
                     <img src="gog assets/tile (26).jpg" class="card-img-top">
                     <h5 class="card-title pt-1">WARTILE</h5>
                     <p class="card-text" style="color: white;">
+                      <div class="button-wrapper">
+                        <div class="icons-wrapper">
+                          <i class="fa fa-windows icons"></i>
+                        </div>
+                        <div class="image-badge-wrapper">
+                          <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                        <div class="badge-wrapper d-flex flex-column">
+                        
+                           <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                           <span class="badge">€7.79</span>
+                        </div>
+                            <div id="shopbtn" style="display: none;">
+                              <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
                     </p>
                    
                   </div>
@@ -597,6 +1059,22 @@ color: white;
                     <img src="gog assets/tile (27).jpg" class="card-img-top">
                     <h5 class="card-title pt-1">WARTILE</h5>
                     <p class="card-text" style="color: white;">
+                      <div class="button-wrapper">
+                        <div class="icons-wrapper">
+                          <i class="fa fa-windows icons"></i>
+                        </div>
+                        <div class="image-badge-wrapper">
+                          <button type="button" class="btn purple-btn"><b>-60%</b></button>
+                        <div class="badge-wrapper d-flex flex-column">
+                        
+                           <small><span class="badge my-badge" style="text-decoration: line-through;">€7.29</span></small>
+                           <span class="badge">€7.79</span>
+                        </div>
+                            <div id="shopbtn" style="display: none;">
+                              <button type="button" class="btn btn-outline-info" style="background-image:linear-gradient(180deg,#a5c700,#86b300); border: 0;">  <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
                     </p>
                    
                   </div>
@@ -626,45 +1104,43 @@ color: white;
     </a>
   </div>
   <footer>
-    <div id="navbarwrapper">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
-        </div>
+    <div style="background-color: #212529; height: 50px; padding: 18px 15px 0;">
+    <div class="container d-flex justify-content-between">
+      <div>
+        <div class="row">
+        <div class="col">
+        <a  class= "mx-2" href="#">Redeem Code</a>
+        <a class= "mx-2" href="#">Reclaim your game</a>
+        <a class= "mx-2" href="#">GOG Connect</a>
+        <a class= "mx-2" href="#">Career opportunities</a>
+        <a class= "mx-2" href="#">Submit your game</a>
+      </div>
+      </div>
+      </div>
+      <div>
+        <i class="fa fa-facebook-f mx-2" ></i>
+        <i class="fa fa-twitter mx-2"></i>
+        <i class="fa fa-twitch mx-2"></i>
+      </div>
     </div>
+    </div>
+    <div style="background-color: #262626; height: 80px;">
+      <div class="container d-flex justify-content-between">
+          <div class="row">
+          <div class="col d-flex justify-content-between">
+            <img src="gog assets/logo.png" width="100px"/>
+         <div class="mt-3">udihdj</div> <br>
+         <div>udihdj</div>
+        </div>
+
+        </div>
+        <div>
+          <i class="fa fa-facebook-f mx-2" ></i>
+          <i class="fa fa-twitter mx-2"></i>
+          <i class="fa fa-twitch mx-2"></i>
+        </div>
+      </div>
+      </div>
   </footer>
   <!-- <div class="container">
   <div class=" row">
