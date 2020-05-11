@@ -1,0 +1,76 @@
+body{
+display: flex;
+background-color: rgb(19,18,18);
+
+}
+p{
+    color: white;
+}
+.main{
+    flex: 6;
+}
+.main #anchorWrapper a{
+    color: grey;
+}
+.main #anchorWrapper a:hover {
+    color: rgba(241, 234, 234, 0.89);
+    text-decoration: none;
+}
+.main .row .col{
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  
+}
+.wrapper {
+    width: 100%;
+    align-items: stretch;
+    flex:1;
+    
+    
+    }
+    #sidebar {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 100vh;
+    background: black;
+    color: #fff;
+    transition: all 0.3s;
+    position:fixed;
+    z-index: 2;
+}
+   
+    #sidebar .sidebar-header {
+    padding: 20px;
+    
+}
+    #sidebar ul.components {
+    padding: 20px 0;
+    ;
+}
+    #sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+    #sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+    #sidebar ul li a:hover {
+    color: rgba(241, 234, 234, 0.89);
+    text-decoration: none;
+}
+    #sidebar ul li> a, a[aria-expanded="true"] {
+    color:grey;
+    
+}
+    ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    }
+.content{
+    padding-top:300px;
+    height: 2000px;
+    transition: margin-left .5s ;
+}
