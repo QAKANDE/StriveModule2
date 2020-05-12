@@ -1,13 +1,19 @@
 body{
-display: flex;
-background-color: rgb(19,18,18);
-
+ background-color: rgb(19,18,18);
 }
+    h4{
+        color: white;
+    } 
 p{
     color: white;
-}
+} 
+
 .main{
-    flex: 6;
+  margin-left: 250px;
+}
+.cardwrapper .row .col .card{
+    background-color: rgb(19,18,18);
+    border: 0;
 }
 .main #anchorWrapper a{
     color: grey;
@@ -22,12 +28,32 @@ p{
     margin-right: 0px;
   
 }
+.slider:hover {
+    opacity: 1;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+  .slider {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background: grey;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  } 
 .wrapper {
     width: 100%;
     align-items: stretch;
-    flex:1;
-    
-    
     }
     #sidebar {
     min-width: 200px;
@@ -37,7 +63,7 @@ p{
     color: #fff;
     transition: all 0.3s;
     position:fixed;
-    z-index: 2;
+    /* z-index: -1; */
 }
    
     #sidebar .sidebar-header {
@@ -46,7 +72,6 @@ p{
 }
     #sidebar ul.components {
     padding: 20px 0;
-    ;
 }
     #sidebar ul p {
     color: #fff;
@@ -62,15 +87,20 @@ p{
     text-decoration: none;
 }
     #sidebar ul li> a, a[aria-expanded="true"] {
-    color:grey;
-    
+    color:grey;   
+}
+.wrapper #sidebar .sideBarBottomBtn .bttn{
+    border-radius: 25px;
+    border: white 2px solid;
+    width: 120px;
 }
     ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     }
-.content{
+    
+/* .content{
     padding-top:300px;
     height: 2000px;
     transition: margin-left .5s ;
-}
+} */
