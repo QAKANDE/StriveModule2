@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=nunito">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="./spotify.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+   * {
+        margin: 0;
+        padding: 0;
+        /* background-color: #191919; */
+    }
+    
+    .container-fluid{
+        background-color: #191919;
+        color: white;
+    }
+    /* sidebar */
+    #sticky-sidebar {
+        min-width: 200px;
+        max-width: 387px;
+        min-height: 90vh;
+        background: black !important;
+        color: #fff;
+        position:fixed;
+        }
+    .footerSB{
+        min-height: 40px;
+        position: absolute;
+        bottom: 0;
+    }
+    /* footer of whole page */
+    .footer {
+        position: fixed;
+        height: 10vh;
+        bottom: 0;
+        width: 100%;
+        background-color:#323232;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 px-0 no-gutter">
+            <div class="wrapper">
+                <nav class= "d-none d-lg-block d-xl-block" id="sidebar">
+                  <!-- <div class="bg-dark" id="sticky-sidebar"> -->
+                    <img class="mt-2" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" style="object-fit: cover; width:150px; ">
+                    <ul class="list-unstyled components py-4">       
+                        <li>
+                             <a class="text-white p-4" href="#"><i class="fa fa-home pr-2" aria-hidden="true"></i> Home</a>
+                        </li>
+                       
+                        <li>
+                            <a class="text-white p-4" href="#"><i class="fa fa-search pr-2" aria-hidden="true"></i>Search</a>
+                        </li>
+                        <li>
+                            <a class="text-white p-4" href="#"><i class="fa fa-bars pr-2" aria-hidden="true"></i> Your Library</a>
+                        </li>
+                    </ul>
+                    <id class="footerSB"> <a href="#" class="p-3"><i class="fa fa-download pr-2" aria-hidden="true"></i>Install App</a>
+                        <br> <h6 class="border-top ml-2"> <img src="spotifyAssets/Diego.jpg" alt="" style="object-fit: cover; width:20px; border-radius: 50%;"> Diego 'Zeba' Benovaz</h6>
+                    </id>
+                </div>
+          </div>
+
+          <!-- for second column -->
+         <div class="col-4 py-5 my-5">              
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div><img src="spotifyAssets/queen.jpg" alt="" style="margin: auto; width: 100%; max-width: 200px; max-height: 100%;"></div>
+                <div><h6 class="text-center">Queen II (Deluxe Edition <br> 2011 Remaster)</h6>
+                    <p class="text-center" style="font-size: small; color: grey;">Queen</p>
+                </div>
+                <div><button class="px-5 text-center" style="background-color: green; border-radius: 25px;border: 0px; color: white;">PLAY</button>
+                    <p class="text-center" style="font-size: small; color: grey;">1974.16 songs</p>
+                </div>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-info" style="background-color:rgb(19,18,18); border: 0px;"><i class="fa fa-heart"></i></button>
+                    <button type="button" class="btn btn-info" style="background-color:rgb(53, 52, 52); border: 0px;">  <i class="fa fa-bars"></i></button>
+                </div>
+            </div>
+         </div>
+         <!-- for 3rd column -->
+         <div class="col-6 pr-5">
+                <div class="d-flex flex-column">
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true">a</i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+                    
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true">b</i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex song1"><i class="fa fa-music pr-2" aria-hidden="true"></i>a</li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song2" aria-hidden="true">b</i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>              
+                    </div>
+
+                    <div class="p-2 w-100 d-flex justify-content-between">
+                        <ul>
+                            <li class="d-inline-flex"><i class="fa fa-music pr-2 song" aria-hidden="true"></i></li>
+                            <li class="d-inline-flex"><h6>Procession-Remastered 2011 <br> <small>Queens</small></h6></li>
+                        </ul>
+                        <div class="p-2 flex-shrink-1 bd-highlight">5:30 </div>
+                                      
+                    </div>
+                </div>
+                      
+         </div>          
+         
+        </div>
+    </div>
+
+    <!-- For overall footer- whole page -->
+    
+    <footer>      
+        <div class="container1">
+        <audio src="./assets/music/beyonce.mp3" id="song"></audio>
+          <div class="row">
+            <div class="col">
+                <div class="row d-flex d-row">
+                    <div class="col-lg-4">
+                         <img src="https://static.stereogum.com/uploads/2017/10/queen-1507300904-640x596.jpg" id="thumbnail" style="height:50px; padding-left:20px;">
+                        </div>
+                        <div class="col-lg-4">
+                          <span class="songdetails" style="font-size: small; color: white;">Song for my father</span> <br>
+                          <span  class="songdetails" style="font-size: smaller; color: white;">Horace Silver</span>
+                           </div>
+                           <div class="col-lg-4">
+                            <button type="button" class="btn btn-info" style="background-color:rgb(53, 52, 52); border: 0px;"><i class="fa fa-heart"></i></button>
+                            <button type="button" class="btn btn-info" style="background-color:rgb(53, 52, 52); border: 0px;"><i class="fa fa-podcast"></i></button>
+                           </div>
+                </div>
+           </div>
+         
+            <div class="col-5 mt-3 btnClass" style="text-align: center;">
+              <button type="button" class="btn btn-info" id="shuffle"><i class="fa fa-random fa-lg"></i></button>
+              <button type="button" class="btn btn-info" id="backward">  <i class="fa fa-step-backward fa-lg"> </i></button>
+              <!-- <img src="spotifyAssets/playicon.png" width="50px" style="background-color: grey;"> -->
+              <button type="button" class="btn btn-info" id="playPause" onclick="playPause(this);"> <i class="fa fa-play-circle fa-lg"> </i></button>
+              <button type="button" class="btn btn-info" id="forward"> <i class="fa fa-step-forward fa-lg"> </i></button>
+              <button type="button" class="btn btn-info"> <i class="fa fa-redo-alt"> </i><br></button>
+              <button type="button" class="btn btn-info"><i class="fa fa-random fa-lg"></i></button>
+              <div class="w3-light-grey w3-round-xlarge mt-1">
+                <div class="w3-container w3-round-xlarge" style="height:5px;"></div>
+              </div>
+            </div>
+            <div class="col mt-3 mr-2 secondbtnClass" style="text-align: right;">
+              <button type="button" class="btn btn-info">  <i class="fa fa-list fa-lg"></i></button>
+              <button type="button" class="btn btn-info">  <i class="fa fa-volume-up fa-lg"></i></button>
+              <button type="button" class="btn btn-info">  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">  </button>           
+            </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </footer>
+      <script src="spotify.js"></script> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
