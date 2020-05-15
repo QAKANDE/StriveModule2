@@ -3,63 +3,54 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no ">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=nunito">
     <title>Spotify</title>
-
     <style>
+      @viewport{
+        width: device-width;
+        zoom: 1;
+      }
+    
+  body{
+ background-color: rgb(19,18,18);
+ font-family: 'nunito', serif;
+font-size: 1em;
 
-    body{
-        background-color: rgb(19, 18, 18);
-        
-    }
-
+}
     .main{
         margin-left: 200px;
-        
     }
 
     .main h1{
         color:white;
         margin-left:65px;
         margin-bottom: 20px;
-    }
-    .jumbotron{
-    height:100%;
-    text-align: center;
-    background-image: url(Queen.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    color:rgb(253, 250, 250);
-    box-shadow:  inset 0px -20px 30px 0px rgb(19, 18, 18);
-    
-    }
-
-    .jumbotron .btn{
-        width:130px;
-        margin-right: 5px;
-        border-radius: 30px;
-        font-size: 13px;
-    }
-    .jumbotron a{
-        text-decoration: none;
-    }
-        
+    }        
    .wrapper {
     width: 100%;
     align-items: stretch;
-    
-    
     }
+    .main #anchorWrapper a:hover {
+    border-bottom: 3px solid green;     
+    color: rgba(241, 234, 234, 0.89);
+    text-decoration: none;
+    font-size: larger;
+} 
+.active{
+    border-bottom: 2px solid green;     
+    color: rgba(241, 234, 234, 0.89);
+    font-size: larger;
+}
     #sidebar {
     min-width: 200px;
     max-width: 200px;
-    min-height: 94vh;
+    min-height: 90vh;
     background: black;
     color: #fff;
     position:fixed;
@@ -89,7 +80,7 @@
 
     #sidebar ul.components {
     padding: 20px 0;
-    ;
+    
 }
 
     #sidebar ul p {
@@ -112,6 +103,17 @@
     color:grey;
     
 }
+.wrapper #sidebar .sideBarBottomBtn .bttn{
+    border-radius: 25px;
+    border: white 2px solid;
+    width: 120px;
+}
+#sidebar ul li a:hover {
+    color: rgba(241, 234, 234, 0.89);
+    font-size: larger;
+    border-left: 3px solid green;
+    text-decoration: none;
+}
     ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
@@ -128,7 +130,10 @@
         text-align: center;
         background-color: rgb(19, 18, 18);
         color: white;
-        
+        position: relative; 
+    }
+    .card :hover{
+      transform: scale(1.05);
     }
 
     .card-img-top {
@@ -137,16 +142,68 @@
         margin-right: auto;
     }
 
+    .card-text{
+      color:grey;
+    }
+    /* .podcastcard .col .card img:hover{
+      transform: scale(1.1);
+      width: 250px;
+    } */
+ 
+.infos-content {
+  padding-top: 1.8rem;
+}
+/* 
+.infos-content > span {
+  display: block;
+} */
+
+.card:hover .infos-container {
+  opacity: 1;
+  transform: translateY(5px);
+  font-size: larger;
+  font-weight:bolder;
+}
+.card:hover img{
+  transform: scale(1.1);
+  width: 150px;
+}
+    .play-icon {
+  position: absolute;
+  color: white;
+  left: -200px;
+  bottom: 20px;
+  background-color: #4caf50;
+  padding: 0.9rem;
+  width: 50px;
+  border-radius: 40px;
+  height: 50px;
+  transform: translateX(0);
+  opacity: 0;
+  transition: opacity 0.3s ease 0.3s, transform 0.4s ease 0.1s;
+  animation: ourGradient 4s ease infinite;
+  z-index: 3;
+}
+.card:hover .play-icon {
+  opacity: 1;
+  transform: translateX(calc(200px + 15px + 0.9rem));
+}
+.play-icon i {
+  position: relative;
+  left: 1px;
+  top: -1px;
+}
+
 
 
     footer{
-      background-color: rgb(37, 37, 37);
+      background-color: rgb(53, 52, 52);
       position:sticky;
-      
       left: 0;
       bottom: 0;
       max-width:100%;
       max-height:auto;
+      height: 10vh;
     }
 
     footer .btn{
@@ -218,10 +275,16 @@
       border-bottom: 3px solid green;
     }
 
-    /* .dropdown-item{}
-      color
-    } */
+    .dropdown-item{
+      color: grey;
+      text-align: left;
+    }
 
+
+    .dropdown-item:hover{
+      color:white;
+      background-color: transparent;
+    }
     .p{
       margin-top: 100px;
     }
@@ -231,73 +294,102 @@
     display: none;
   }
 }
-
-@media (max-width: 500px) {
-  .main {
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 501px) {
-  .jumbotron button {
+@media (max-width: 1024px) {
+  #sidebar {
     display: none;
   }
-
-   
+}
+@media (max-width: 1024px) {
+  footer {
+   height: auto;
   }
+}
+@media (max-width: 1024px) {
+  .main > h1 {
+    font-size: 50px;
+  }
+}
+ /* @media (max-width: 1024px) {
+  .main .row {
+    height: 90vh;
+     min-height: 327px;
+     min-width: 400px;
+     max-height:400px;
+  } 
+}  */
+@media (max-width: 1024px) {
+  .main {
+    width: 100%;
+    height: 100%;
+   
+  } 
+} 
 
-@media (max-width: 400px) {
+
+@media (max-width:500px) {
+  .main {
+    margin-left: 0;
+    width: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  main{
+    width: 700px;
+  }
+ }
+
+/* @media (min-width: 501px) {
+  .jumbotron .btn-sm {
+    display: none;
+  }
+  } */
+
+/* @media (max-width: 400px) {
   .main {
     margin-left: 0;
   }
-}
-
+} */
 </style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=nunito">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="./spotify.css"/>
-<link rel="script"  href="spotify.js">
   </head>
-
   <body>
-   
-
     <div class="wrapper">
-      <nav class= "d-none d-lg-block d-xl-block" id="sidebar">
-        <!-- <div class="bg-dark" id="sticky-sidebar"> -->
-          <img class="mt-2" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" style="object-fit: cover; width:150px; ">
-          <ul class="list-unstyled components py-4">       
-              <li>
-                   <a class="text-white p-4" href="#"><i class="fa fa-home pr-2" aria-hidden="true"></i> Home</a>
-              </li>
-             
-              <li>
-                  <a class="text-white p-4" href="#"><i class="fa fa-search pr-2" aria-hidden="true"></i>Search</a>
-              </li>
-              <li>
-                  <a class="text-white p-4" href="#"><i class="fa fa-bars pr-2" aria-hidden="true"></i> Your Library</a>
-              </li>
-          </ul>
-          <id class="footerSB"> 
-            <div class="d-flex align-content-end flex-wrap">
-              <div class="row">
-                <div class="col">
-                  <div class="sideBarBottomBtn d-flex flex-column">
-                    <button type="button" class="btn btn-primary btn-sm bttn mx-4" style="background-color: white; color: black;">SIGN UP</button>
-                    <button type="button" class="btn btn-primary btn-sm bttn mt-3 mx-4" style="background-color: grey; color: white;">LOG IN</button>
-                  </div>
-                  <div class="sideBarBottomAnchor d-flex flex-column">
-                      <span class="mx-4"><a href="#" style="color:white; font-size: 0.9em;">Cookie</a> || <a href="#"style="color:white; font-size: 0.9em;">Privacy policy</a></span> 
+        
+        <nav id="sidebar"> 
+            <div class="sidebar-header">
+                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" style="object-fit: cover; width:150px; ">
+            </div>
+    
+            <ul class="list-unstyled components">
+                <li>
+                     <a href="#"><i class="fas fa-home"></i> Home</a>
+                </li>
+               
+                <li>
+                    <a href="#"><i class="fas fa-search"></i> Search</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-stream"></i> Your Library</a>
+                </li>
+            </ul>
+            <id class="footerSB">
+                <div class="row">
+                  <div class="col">
+                    <div class="sideBarBottomBtn d-flex flex-column">
+                      <button type="button" class="btn btn-primary btn-sm bttn mx-4" style="background-color: white; color: black;">SIGN UP</button>
+                      <button type="button" class="btn btn-primary btn-sm bttn mt-3 mx-4" style="background-color: grey; color: white;">LOG IN</button>
+                    </div>
+                    <div class="sideBarBottomAnchor d-flex flex-column">
+                        <span class="mx-4"><a href="#" style="color:white; font-size: 0.9em;">Cookie</a> || <a href="#"style="color:white; font-size: 0.9em;">Privacy policy</a></span> 
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </id>
-      </div>
-  
-          </nav>
+            </id>
+        </nav>
+    
+    </div>
 
     <div class = "main">
+      
       <div id="anchorWrapper" class="d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -324,134 +416,253 @@
           </div>
           </nav>
         </div>
-        <h4 class="mt-4">#THROWBACKTHURSDAY</h4>
-        <div class="row mx-4 row-cols-xs-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-6 ">
-          <div class="col">
-            <div class="card">
-              <img src="spotifyAssets/spotify6.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-title" style="font-size: small;">Italian Karaoke</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="spotifyAssets/spotify7.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-title" style="font-size: small;">Lyricist</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="spotifyAssets/spotify8.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-title" style="font-size: small;">Italy's Frequent Rotation</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="spotifyAssets/spotify11.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-title" style="font-size: small;">OOs Italy</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="spotifyAssets/spotify10.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-title" style="font-size: small;">Cocktail Hour</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="spotifyAssets/spotify9.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-title" style="font-size: small;">I Love My 90's HipHop</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        
-        
-        <div class="row mx-4 row-cols-sm-1 row-cols-md-3 row-cols-lg-6 ">
-          <div class="col">
-            <div class="card mb-2">
-              <h4 class="mt-4">Classifiche</h4>
-                <img src="spotifyAssets/spotify2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title" style="font-size: small;">Top 100 Italy</p>
-                </div>
-              </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <h4 class="mt-4" style="visibility:hidden;">Classifiche</h4>
-                <img src="spotifyAssets/spotify3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title" style="font-size: small;">Top 50 Argentina</p>
-                </div>
-              </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <h4 class="mt-4" style="visibility:hidden;">Classifiche</h4>
-                <img src="spotifyAssets/spotify4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title" style="font-size: small;">Viral 50 Global</p>
-                </div>
-              </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <h4 class="mt-4" style="visibility:hidden;">Classifiche</h4>
-                <img src="spotifyAssets/images.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title" style="font-size: small;">Top 50 Italy</p>
-                </div>
-              </div>
-          </div>
-        </div>
+        <h1>#ThrowBackThursday</h1>
 
-         
+        <div class="row mx-4 row-cols-2 row-cols-md-3 row-cols-lg-6 ">
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify6.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+               Dutch Land
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify7.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                  Worldwide vibes
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify8.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                  Lyricst
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify9.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                 90's HipHop
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify10.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                Covers
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify11.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                Top hits
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h1 class="mt-4">Classifiche</h1>
+        <div class="row mx-4 row-cols-2 row-cols-md-3 row-cols-lg-6 ">
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify2.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                Top 100 Italia 
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify3.jpg"class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                Top 50 Argentina
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify4.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                 Viral 50
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="position-relative" style="overflow: hidden;">
+                <img src="spotifyAssets/spotify2.jpg" class="card-img-top" alt="...">
+                <div class="play-icon gradient">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>-->
+              <div class="card-body">
+                <div class="infos-container">
+                  <div class="infos-content">
+                    <p class="card-title">
+                      <span>
+                Top 50 Espanyol
+                    </span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
-    <footer>      
+    <footer>
+
       <div class="container1">
         <div class="row">
-          <div class="col">
+          <div class="col-3">
             <img src="https://static.stereogum.com/uploads/2017/10/queen-1507300904-640x596.jpg" style="height:50px; padding-left:20px;">
           </div>
-          <div class="col-5 mt-3 btnClass" style="text-align: center;">
-            <button type="button" class="btn btn-info"><i class="fa fa-random fa-lg"></i></button>
-            <button type="button" class="btn btn-info">  <i class="fa fa-step-backward fa-lg"> </i></button>
-            <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>
-            <button type="button" class="btn btn-info"> <i class="fa fa-step-forward fa-lg"> </i></button>
-            <button type="button" class="btn btn-info"> <i class="fa fa-redo-alt"> </i><br></button>
-            <button type="button" class="btn btn-info"><i class="fa fa-random fa-lg"></i></button>
-            <div class="w3-light-grey w3-round-xlarge mt-1">
+          <div class="col-6 mt-3" style="text-align: center;">
+            <button type="button" class="btn btn-sm"><i class="fa fa-random fa-lg"></i></button>
+            <button type="button" class="btn btn-sm">  <i class="fa fa-step-backward fa-lg"> </i></button>
+            <button type="button" class="btn btn-sm"> <i class="fa fa-play-circle fa-lg"> </i></button>
+            <button type="button" class="btn btn-sm"> <i class="fa fa-step-forward fa-lg"> </i></button>
+            <button type="button" class="btn btn-sm"> <i class="fa fa-redo-alt"> </i><br></button>
+            <button type="button" class="btn btn-sm"><i class="fa fa-random fa-lg"></i></button>
+            <div class="w3-light-grey w3-round-xlarge mt-3">
               <div class="w3-container w3-round-xlarge" style="height:5px;"></div>
             </div>
           </div>
-          <div class="col mt-3 mr-2 secondbtnClass" style="text-align: right;">
-            <button type="button" class="btn btn-info">  <i class="fa fa-list fa-lg"></i></button>
-            <button type="button" class="btn btn-info">  <i class="fa fa-volume-up fa-lg"></i></button>
-            <button type="button" class="btn btn-info">  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">  </button>           
+          <div class="col mt-3 mr-2"style="text-align: right;">
+            <i class="fas fa-list fa-lg"></i>
+            <i class="fas fa-volume-up fa-lg"></i>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">           
           </div>
           </div>
         </div>
       </div>
     </footer>
-
-
-    
-         
-    
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://kit.fontawesome.com/5e49adb972.js" crossorigin="anonymous"></script>

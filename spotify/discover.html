@@ -8,54 +8,43 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=nunito">
 
 
     <title>Spotify</title>
 
     <style>
 
-    body{
-        background-color: rgb(19, 18, 18);
-        
-    }
-
+body{
+ background-color: rgb(19,18,18);
+ font-family: 'nunito', serif;
+font-size: 1em;
+}
     .main{
         margin-left: 200px;
-        
     }
 
     .main h1{
         color:white;
         margin-left:65px;
         margin-bottom: 20px;
-    }
-    .jumbotron{
-    height:100%;
-    text-align: center;
-    background-image: url(Queen.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    color:rgb(253, 250, 250);
-    box-shadow:  inset 0px -20px 30px 0px rgb(19, 18, 18);
-    
-    }
-
-    .jumbotron .btn{
-        width:130px;
-        margin-right: 5px;
-        border-radius: 30px;
-        font-size: 13px;
-    }
-    .jumbotron a{
-        text-decoration: none;
-    }
-        
+    }        
    .wrapper {
     width: 100%;
     align-items: stretch;
-    
-    
     }
+    .main #anchorWrapper a:hover {
+    border-bottom: 3px solid green;     
+    color: rgba(241, 234, 234, 0.89);
+    text-decoration: none;
+    font-size: larger;
+} 
+.active{
+    border-bottom: 2px solid green;     
+    color: rgba(241, 234, 234, 0.89);
+    font-size: larger;
+}
     #sidebar {
     min-width: 200px;
     max-width: 200px;
@@ -112,6 +101,17 @@
     color:grey;
     
 }
+.wrapper #sidebar .sideBarBottomBtn .bttn{
+    border-radius: 25px;
+    border: white 2px solid;
+    width: 120px;
+}
+#sidebar ul li a:hover {
+    color: rgba(241, 234, 234, 0.89);
+    font-size: larger;
+    border-left: 3px solid green;
+    text-decoration: none;
+}
     ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
@@ -137,12 +137,15 @@
         margin-right: auto;
     }
 
+    .card-text{
+      color:grey;
+    }
+
 
 
     footer{
-      background-color: rgb(37, 37, 37);
+        background-color: rgb(53, 52, 52);
       position:sticky;
-      
       left: 0;
       bottom: 0;
       max-width:100%;
@@ -218,10 +221,16 @@
       border-bottom: 3px solid green;
     }
 
-    /* .dropdown-item{}
-      color
-    } */
+    .dropdown-item{
+      color: grey;
+      text-align: left;
+    }
 
+
+    .dropdown-item:hover{
+      color:white;
+      background-color: transparent;
+    }
     .p{
       margin-top: 100px;
     }
@@ -239,7 +248,7 @@
 }
 
 @media (min-width: 501px) {
-  .jumbotron button {
+  .jumbotron .btn-sm {
     display: none;
   }
 
@@ -253,10 +262,7 @@
 }
 
 </style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=nunito">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="./spotify.css"/>
-<link rel="script"  href="spotify.js">
+
   </head>
 
   <body>
@@ -420,27 +426,28 @@
          
     </div>
 
-    <footer>      
+    <footer>
+
       <div class="container1">
         <div class="row">
-          <div class="col">
+          <div class="col-3">
             <img src="https://static.stereogum.com/uploads/2017/10/queen-1507300904-640x596.jpg" style="height:50px; padding-left:20px;">
           </div>
-          <div class="col-5 mt-3 btnClass" style="text-align: center;">
-            <button type="button" class="btn btn-info"><i class="fa fa-random fa-lg"></i></button>
-            <button type="button" class="btn btn-info">  <i class="fa fa-step-backward fa-lg"> </i></button>
-            <button type="button" class="btn btn-info"> <i class="fa fa-play-circle fa-lg"> </i></button>
-            <button type="button" class="btn btn-info"> <i class="fa fa-step-forward fa-lg"> </i></button>
-            <button type="button" class="btn btn-info"> <i class="fa fa-redo-alt"> </i><br></button>
-            <button type="button" class="btn btn-info"><i class="fa fa-random fa-lg"></i></button>
-            <div class="w3-light-grey w3-round-xlarge mt-1">
+          <div class="col-6 mt-3" style="text-align: center;">
+            <button type="button" class="btn btn-sm"><i class="fa fa-random fa-lg"></i></button>
+            <button type="button" class="btn btn-sm">  <i class="fa fa-step-backward fa-lg"> </i></button>
+            <button type="button" class="btn btn-sm"> <i class="fa fa-play-circle fa-lg"> </i></button>
+            <button type="button" class="btn btn-sm"> <i class="fa fa-step-forward fa-lg"> </i></button>
+            <button type="button" class="btn btn-sm"> <i class="fa fa-redo-alt"> </i><br></button>
+            <button type="button" class="btn btn-sm"><i class="fa fa-random fa-lg"></i></button>
+            <div class="w3-light-grey w3-round-xlarge mt-3">
               <div class="w3-container w3-round-xlarge" style="height:5px;"></div>
             </div>
           </div>
-          <div class="col mt-3 mr-2 secondbtnClass" style="text-align: right;">
-            <button type="button" class="btn btn-info">  <i class="fa fa-list fa-lg"></i></button>
-            <button type="button" class="btn btn-info">  <i class="fa fa-volume-up fa-lg"></i></button>
-            <button type="button" class="btn btn-info">  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">  </button>           
+          <div class="col mt-3 mr-2"style="text-align: right;">
+            <i class="fas fa-list fa-lg"></i>
+            <i class="fas fa-volume-up fa-lg"></i>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">           
           </div>
           </div>
         </div>
